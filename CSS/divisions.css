@@ -1,0 +1,2176 @@
+/* ================================= */
+/* DIVISIONS HERO */
+/* ================================= */
+
+.divisions-hero {
+
+    min-height: calc(100vh - 80px);
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 120px 8%;
+
+    background:
+
+        radial-gradient(
+            circle at 75% 50%,
+            rgba(
+                0,
+                168,
+                255,
+                0.12
+            ),
+            transparent 38%
+        ),
+
+        var(--void-black);
+
+}
+
+
+/* ================================= */
+/* GRID */
+/* ================================= */
+
+.divisions-grid {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0.1;
+
+    background-image:
+
+        linear-gradient(
+            rgba(
+                232,
+                237,
+                243,
+                0.15
+            ) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(
+                232,
+                237,
+                243,
+                0.15
+            ) 1px,
+            transparent 1px
+        );
+
+    background-size: 60px 60px;
+
+}
+
+
+/* ================================= */
+/* GLOW */
+/* ================================= */
+
+.divisions-glow {
+
+    position: absolute;
+
+    width: 550px;
+
+    height: 550px;
+
+    right: -120px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(
+                0,
+                229,
+                255,
+                0.12
+            ),
+            transparent 65%
+        );
+
+    filter: blur(40px);
+
+}
+
+
+/* ================================= */
+/* HERO CONTENT */
+/* ================================= */
+
+.divisions-hero-content {
+
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 850px;
+
+}
+
+
+.divisions-hero h1 {
+
+    margin: 25px 0 35px;
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: clamp(
+        60px,
+        9vw,
+        125px
+    );
+
+    line-height: 0.86;
+
+    letter-spacing: -5px;
+
+}
+
+
+.divisions-hero h1 span {
+
+    display: block;
+
+    color: var(--electric-blue);
+
+}
+
+
+.divisions-hero-content > p {
+
+    max-width: 650px;
+
+    color: var(--soft-silver);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================================= */
+/* STAT */
+/* ================================= */
+
+.division-stat {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    margin-top: 55px;
+
+}
+
+
+.division-stat strong {
+
+    color: var(--silver-white);
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: 32px;
+
+}
+
+
+.division-stat span {
+
+    color: var(--soft-silver);
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ================================= */
+/* DIVISION STARLIGHT LOGO */
+/* ================================= */
+
+.division-logo {
+
+    width: 600px;
+
+    height: 600px;
+
+    position: absolute;
+
+    right: 3%;
+
+    top:45%;
+
+    transform:
+        translateY(-50%);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* ================================= */
+/* LOGO SYMBOL */
+/* ================================= */
+
+.division-logo-symbol {
+
+    color: #FFFFFF;
+
+    font-size: 400px;
+
+    line-height: 1;
+
+    text-shadow:
+
+        0 0 10px #FFFFFF,
+
+        0 0 25px rgba(
+            0,
+            168,
+            255,
+            0.9
+        ),
+
+        0 0 55px rgba(
+            0,
+            168,
+            255,
+            0.75
+        ),
+
+        0 0 110px rgba(
+            0,
+            168,
+            255,
+            0.4`5
+        );
+
+    animation:
+        divisionLogoSpin
+        14s
+        linear
+        infinite;
+
+}
+
+
+/* ================================= */
+/* LOGO ROTATION */
+/* ================================= */
+
+@keyframes divisionLogoSpin {
+
+    from {
+
+        transform:
+            perspective(500px)
+            rotateY(0deg);
+
+    }
+
+    to {
+
+        transform:
+            perspective(500px)
+            rotateY(360deg);
+
+    }
+
+}
+
+/* ================================= */
+/* CORE DIVISIONS */
+/* ================================= */
+
+.core-divisions {
+
+    padding: 160px 8%;
+
+    background: var(--midnight-navy);
+
+    border-top: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.06
+    );
+
+}
+
+
+.core-divisions-header {
+
+    max-width: 850px;
+
+    margin-bottom: 100px;
+
+}
+
+
+.core-divisions-header h2 {
+
+    margin: 25px 0 30px;
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: clamp(
+        45px,
+        6vw,
+        85px
+    );
+
+    line-height: 0.92;
+
+    letter-spacing: -3px;
+
+}
+
+
+.core-divisions-header h2 span {
+
+    display: block;
+
+    color: var(--electric-blue);
+
+}
+
+
+.core-divisions-header > p {
+
+    max-width: 650px;
+
+    color: var(--soft-silver);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================================= */
+/* DIVISION LIST */
+/* ================================= */
+
+.division-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.division-block {
+
+    min-height: 570px;
+
+    display: grid;
+
+    grid-template-columns: 70px 1fr 420px;
+
+    gap: 50px;
+
+    align-items: center;
+
+    padding: 80px 0;
+
+    border-top: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.08
+    );
+
+}
+
+
+.division-block:last-child {
+
+    border-bottom: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.08
+    );
+
+}
+
+
+/* ================================= */
+/* NUMBER */
+/* ================================= */
+
+.division-block-number {
+
+    align-self: start;
+
+    padding-top: 12px;
+
+    color: var(--electric-blue);
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ================================= */
+/* CONTENT */
+/* ================================= */
+
+.division-block-content {
+
+    max-width: 700px;
+
+}
+
+
+.division-block-category {
+
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: var(--electric-blue);
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+
+}
+
+
+.division-block-content h3 {
+
+    margin-bottom: 25px;
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: clamp(
+        40px,
+        5vw,
+        65px
+    );
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+
+}
+
+
+.division-block-content h3 span {
+
+    display: block;
+
+    color: var(--silver-white);
+
+}
+
+
+.division-block-content > p {
+
+    max-width: 620px;
+
+    color: var(--soft-silver);
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+}
+
+
+/* ================================= */
+/* SPECIALTIES */
+/* ================================= */
+
+.division-specialties {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 30px;
+
+}
+
+
+.division-specialties span {
+
+    padding: 8px 12px;
+
+    color: rgba(
+        232,
+        237,
+        243,
+        0.65
+    );
+
+    border: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.1
+    );
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* ================================= */
+/* DIVISION VISUAL */
+/* ================================= */
+
+.division-block-visual {
+
+    width: 400px;
+
+    height: 400px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.08
+    );
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(
+                0,
+                168,
+                255,
+                0.09
+            ),
+            transparent 65%
+        );
+
+}
+
+.division-visual-core {
+
+    width: 120px;
+
+    height: 120px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #FFFFFF;
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    background: rgba(
+        5,
+        7,
+        11,
+        0.9
+    );
+
+    border: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.18
+    );
+
+    box-shadow:
+
+        0 0 35px rgba(
+            0,
+            168,
+            255,
+            0.14
+        );
+
+}
+
+
+@keyframes divisionVisualSpin {
+
+    from {
+        transform: rotate(-25deg);
+    }
+
+    to {
+        transform: rotate(335deg);
+    }
+
+}
+
+
+/* ================================= */
+/* DIVISION LINK */
+/* ================================= */
+
+.division-block-content a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+
+    color: var(--silver-white);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.division-block-content a span {
+
+    color: var(--electric-blue);
+
+    font-size: 17px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.division-block-content a:hover {
+
+    color: var(--electric-blue);
+
+}
+
+
+.division-block-content a:hover span {
+
+    transform: translateX(6px);
+
+}
+
+/* ================================= */
+/* STARLIGHT NETWORK */
+/* ================================= */
+
+.starlight-network {
+
+    padding: 160px 8%;
+
+    background: var(--void-black);
+
+    border-top: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.06
+    );
+
+}
+
+
+.network-header {
+
+    max-width: 850px;
+
+    margin-bottom: 90px;
+
+}
+
+
+.network-header h2 {
+
+    margin: 25px 0 30px;
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: clamp(
+        45px,
+        6vw,
+        85px
+    );
+
+    line-height: 0.92;
+
+    letter-spacing: -3px;
+
+}
+
+
+.network-header h2 span {
+
+    display: block;
+
+    color: var(--electric-blue);
+
+}
+
+
+.network-header > p {
+
+    max-width: 650px;
+
+    color: var(--soft-silver);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================================= */
+/* NETWORK GRID */
+/* ================================= */
+
+.network-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 16px;
+
+}
+
+
+.network-card {
+
+    min-height: 300px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 35px;
+
+    overflow: hidden;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(
+                16,
+                28,
+                50,
+                0.65
+            ),
+            rgba(
+                5,
+                7,
+                11,
+                0.95
+            )
+        );
+
+    border: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.08
+    );
+
+    transition: 0.35s ease;
+
+}
+
+
+.network-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    right: -80px;
+
+    bottom: -80px;
+
+    border-radius: 50%;
+
+    background: rgba(
+        0,
+        168,
+        255,
+        0.08
+    );
+
+    filter: blur(45px);
+
+    transition: 0.35s ease;
+
+}
+
+
+.network-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: rgba(
+        0,
+        168,
+        255,
+        0.35
+    );
+
+}
+
+
+.network-card:hover::before {
+
+    background: rgba(
+        0,
+        229,
+        255,
+        0.14
+    );
+
+}
+
+
+/* ================================= */
+/* CARD TOP */
+/* ================================= */
+
+.network-card-top {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.network-card-top span {
+
+    color: var(--electric-blue);
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.network-card-top strong {
+
+    color: rgba(
+        232,
+        237,
+        243,
+        0.25
+    );
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ================================= */
+/* CARD CONTENT */
+/* ================================= */
+
+.network-card h3 {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 45px;
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: 27px;
+
+    letter-spacing: -1px;
+
+}
+
+
+.network-card > p {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 500px;
+
+    margin-top: 12px;
+
+    color: var(--soft-silver);
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================================= */
+/* CARD LINE */
+/* ================================= */
+
+.network-card-line {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    height: 1px;
+
+    margin: 25px 0;
+
+    background: rgba(
+        232,
+        237,
+        243,
+        0.08
+    );
+
+}
+
+
+/* ================================= */
+/* CARD LINK */
+/* ================================= */
+
+.network-card a {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: var(--silver-white);
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.network-card a span {
+
+    color: var(--electric-blue);
+
+    font-size: 16px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.network-card a:hover {
+
+    color: var(--electric-blue);
+
+}
+
+
+.network-card a:hover span {
+
+    transform: translateX(6px);
+
+}
+
+
+/* ================================= */
+/* NETWORK FOOTER */
+/* ================================= */
+
+.network-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin-top: 70px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.08
+    );
+
+}
+
+
+.network-footer span {
+
+    color: rgba(
+        232,
+        237,
+        243,
+        0.45
+    );
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.network-footer strong {
+
+    color: var(--silver-white);
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: 25px;
+
+}
+
+/* ================================= */
+/* GLOBAL REACH */
+/* ================================= */
+
+.global-reach {
+
+    padding: 160px 8%;
+
+    background: var(--midnight-navy);
+
+    border-top: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.06
+    );
+
+}
+
+
+.global-reach-header {
+
+    max-width: 850px;
+
+    margin-bottom: 90px;
+
+}
+
+
+.global-reach-header h2 {
+
+    margin: 25px 0 30px;
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: clamp(
+        45px,
+        6vw,
+        85px
+    );
+
+    line-height: 0.92;
+
+    letter-spacing: -3px;
+
+}
+
+
+.global-reach-header h2 span {
+
+    display: block;
+
+    color: var(--electric-blue);
+
+}
+
+
+.global-reach-header > p {
+
+    max-width: 650px;
+
+    color: var(--soft-silver);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================================= */
+/* MAP */
+/* ================================= */
+
+.global-map {
+
+    min-height: 600px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.08
+    );
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            rgba(
+                0,
+                168,
+                255,
+                0.09
+            ),
+            transparent 45%
+        ),
+
+        #05070B;
+
+}
+
+
+/* ================================= */
+/* MAP GRID */
+/* ================================= */
+
+.map-grid {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0.18;
+
+    background-image:
+
+        linear-gradient(
+            rgba(
+                232,
+                237,
+                243,
+                0.12
+            ) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(
+                232,
+                237,
+                243,
+                0.12
+            ) 1px,
+            transparent 1px
+        );
+
+    background-size: 50px 50px;
+
+}
+
+
+/* ================================= */
+/* MAP CONNECTIONS */
+/* ================================= */
+
+.map-line {
+
+    position: absolute;
+
+    height: 1px;
+
+    transform-origin: left center;
+
+    background: linear-gradient(
+        90deg,
+        rgba(
+            0,
+            168,
+            255,
+            0.5
+        ),
+        transparent
+    );
+
+}
+
+
+.line-one {
+
+    width: 340px;
+
+    left: 22%;
+
+    top: 40%;
+
+    transform:
+        rotate(8deg);
+
+}
+
+
+.line-two {
+
+    width: 420px;
+
+    left: 36%;
+
+    top: 55%;
+
+    transform:
+        rotate(-8deg);
+
+}
+
+
+.line-three {
+
+    width: 300px;
+
+    left: 55%;
+
+    top: 48%;
+
+    transform:
+        rotate(15deg);
+
+}
+
+
+/* ================================= */
+/* LOCATIONS */
+/* ================================= */
+
+.location {
+
+    position: absolute;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    z-index: 3;
+
+}
+
+
+.location-dot {
+
+    width: 9px;
+
+    height: 9px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: var(--electric-blue);
+
+    box-shadow:
+
+        0 0 10px var(--electric-blue),
+
+        0 0 25px rgba(
+            0,
+            168,
+            255,
+            0.5
+        );
+
+}
+
+
+.location-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.location-info strong {
+
+    color: var(--silver-white);
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.location-info small {
+
+    color: var(--soft-silver);
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* ================================= */
+/* LOCATION POSITIONS */
+/* ================================= */
+
+.location-one {
+
+    left: 15%;
+
+    top: 30%;
+
+}
+
+
+.location-two {
+
+    left: 44%;
+
+    top: 27%;
+
+}
+
+
+.location-three {
+
+    left: 48%;
+
+    top: 58%;
+
+}
+
+
+.location-four {
+
+    left: 68%;
+
+    top: 38%;
+
+}
+
+
+.location-five {
+
+    left: 78%;
+
+    top: 67%;
+
+}
+
+
+/* ================================= */
+/* CENTER */
+/* ================================= */
+
+.global-map-center {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform:
+        translate(
+            -50%,
+            -50%
+        );
+
+    width: 150px;
+
+    height: 150px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(
+        5,
+        7,
+        11,
+        0.9
+    );
+
+    border: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.15
+    );
+
+    box-shadow:
+
+        0 0 45px rgba(
+            0,
+            168,
+            255,
+            0.12
+        );
+
+    z-index: 4;
+
+}
+
+
+.global-map-center span {
+
+    margin-bottom: 10px;
+
+    color: #FFFFFF;
+
+    font-size: 25px;
+
+}
+
+
+.global-map-center strong {
+
+    color: var(--silver-white);
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.global-map-center small {
+
+    margin-top: 5px;
+
+    color: var(--soft-silver);
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+/* ================================= */
+/* GLOBAL STATS */
+/* ================================= */
+
+.global-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    margin-top: 20px;
+
+    border: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.08
+    );
+
+}
+
+
+.global-stats div {
+
+    padding: 35px;
+
+    border-right: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.08
+    );
+
+}
+
+
+.global-stats div:last-child {
+
+    border-right: none;
+
+}
+
+
+.global-stats strong {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--silver-white);
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: 32px;
+
+}
+
+
+.global-stats span {
+
+    color: var(--soft-silver);
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+}
+
+/* ================================= */
+/* STARLIGHT ADVANTAGE */
+/* ================================= */
+
+.starlight-advantage {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 100px;
+
+    padding: 160px 8%;
+
+    background: var(--void-black);
+
+    border-top: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.06
+    );
+
+}
+
+
+/* ================================= */
+/* ADVANTAGE CONTENT */
+/* ================================= */
+
+.advantage-content {
+
+    max-width: 650px;
+
+}
+
+
+.advantage-content h2 {
+
+    margin: 25px 0 35px;
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: clamp(
+        50px,
+        6vw,
+        90px
+    );
+
+    line-height: 0.9;
+
+    letter-spacing: -4px;
+
+}
+
+
+.advantage-content h2 span {
+
+    display: block;
+
+    color: var(--electric-blue);
+
+}
+
+
+.advantage-content p {
+
+    max-width: 580px;
+
+    margin-bottom: 20px;
+
+    color: var(--soft-silver);
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+}
+
+
+/* ================================= */
+/* PRINCIPLES */
+/* ================================= */
+
+.advantage-principles {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.advantage-item {
+
+    padding: 35px 0;
+
+    border-top: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.1
+    );
+
+}
+
+
+.advantage-item:last-child {
+
+    border-bottom: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.1
+    );
+
+}
+
+
+.advantage-item strong {
+
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: var(--electric-blue);
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.advantage-item h3 {
+
+    margin-bottom: 12px;
+
+    color: var(--silver-white);
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: 25px;
+
+    letter-spacing: -1px;
+
+}
+
+
+.advantage-item p {
+
+    max-width: 520px;
+
+    color: var(--soft-silver);
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ================================= */
+/* DIVISIONS CTA */
+/* ================================= */
+
+.divisions-cta {
+
+    min-height: 600px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 140px 8%;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 75% 50%,
+            rgba(
+                0,
+                168,
+                255,
+                0.14
+            ),
+            transparent 40%
+        ),
+
+        var(--midnight-navy);
+
+    border-top: 1px solid rgba(
+        232,
+        237,
+        243,
+        0.06
+    );
+
+}
+
+
+.divisions-cta::after {
+
+    content: "✦";
+
+    position: absolute;
+
+    right: 8%;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    color: rgba(
+        232,
+        237,
+        243,
+        0.025
+    );
+
+    font-size: 320px;
+
+    line-height: 1;
+
+    pointer-events: none;
+
+}
+
+
+.divisions-cta-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+}
+
+
+.divisions-cta h2 {
+
+    margin: 25px 0 30px;
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    font-size: clamp(
+        55px,
+        7vw,
+        105px
+    );
+
+    line-height: 0.88;
+
+    letter-spacing: -5px;
+
+}
+
+
+.divisions-cta h2 span {
+
+    display: block;
+
+    color: var(--electric-blue);
+
+}
+
+
+.divisions-cta p {
+
+    max-width: 600px;
+
+    color: var(--soft-silver);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+}
+
+
+.division-cta-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    min-width: 220px;
+
+    margin-top: 40px;
+
+    padding: 16px 25px;
+
+    color: #05070B;
+
+    background: var(--silver-white);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.division-cta-button span {
+
+    color: var(--electric-blue);
+
+    font-size: 17px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.division-cta-button:hover {
+
+    color: #FFFFFF;
+
+    background: var(--electric-blue);
+
+    transform: translateY(-3px);
+
+}
+
+
+.division-cta-button:hover span {
+
+    color: #FFFFFF;
+
+    transform: translateX(5px);
+
+}
+
+/* ================================= */
+/* RESPONSIVE DESIGN */
+/* ================================= */
+
+@media (max-width: 1000px) {
+
+    .division-orbit {
+
+        width: 330px;
+
+        height: 330px;
+
+        right: 2%;
+
+        opacity: 0.45;
+
+    }
+
+
+    .ring-a {
+
+        width: 330px;
+
+    }
+
+
+    .division-block {
+
+        grid-template-columns:
+            50px 1fr;
+
+    }
+
+
+    .division-block-visual {
+
+        display: none;
+
+    }
+
+
+    .starlight-advantage {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 70px;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .divisions-hero {
+
+        padding: 100px 6%;
+
+    }
+
+
+    .divisions-hero h1 {
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .division-orbit {
+
+        display: none;
+
+    }
+
+
+    .core-divisions,
+    .starlight-network,
+    .global-reach,
+    .starlight-advantage {
+
+        padding-left: 6%;
+
+        padding-right: 6%;
+
+    }
+
+
+    .network-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .division-block {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 15px;
+
+        padding: 60px 0;
+
+    }
+
+
+    .division-block-number {
+
+        padding-top: 0;
+
+    }
+
+
+    .global-map {
+
+        min-height: 450px;
+
+    }
+
+
+    .location-info {
+
+        display: none;
+
+    }
+
+
+    .global-stats {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .global-stats div {
+
+        border-bottom: 1px solid rgba(
+            232,
+            237,
+            243,
+            0.08
+        );
+
+    }
+
+
+    .global-stats div:nth-child(2) {
+
+        border-right: none;
+
+    }
+
+
+    .global-stats div:nth-child(3) {
+
+        border-right: 1px solid rgba(
+            232,
+            237,
+            243,
+            0.08
+        );
+
+    }
+
+
+    .divisions-cta {
+
+        padding-left: 6%;
+
+        padding-right: 6%;
+
+    }
+
+
+    .divisions-cta::after {
+
+        opacity: 0.5;
+
+        right: -100px;
+
+    }
+
+}
